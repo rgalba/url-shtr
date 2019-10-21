@@ -4,7 +4,7 @@ This is an url shortener app.
 
 ### Features
 
-#### Scenario: shortening a url
+#### Scenario 1: shortening an URL
 
 ```gherkin
 Given a long url
@@ -12,7 +12,7 @@ When I request to short
 Then it should return a unique shortened code value 6 chars long
 ```
 
-#### Scenario: reading existing URL from a shortened
+#### Scenario 2: reading existing URL from a shortened
 
 ```gherkin
 Given an existing url
@@ -20,7 +20,7 @@ When I request using short code
 Then it should return the original url
 ```
 
-#### Scenario: trying to read unexisting URL from a shortened
+#### Scenario 3: trying to read unexisting URL from a shortened
 
 ```gherkin
 Given an unexisting url
