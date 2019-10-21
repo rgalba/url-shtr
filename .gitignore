@@ -89,6 +89,8 @@ modules.xml
 .idea/sonarlint
 
 ### Java ###
+.classpath
+
 # Compiled class file
 *.class
 
@@ -142,6 +144,6 @@ gradle-app.setting
 
 ### Gradle Patch ###
 **/build/
-**/.bin/
+**/bin/
 
 # End of https://www.gitignore.io/api/java,gradle,intellij+all,visualstudiocode
