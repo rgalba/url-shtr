@@ -82,10 +82,40 @@ mvn clean package
 ## AWS Lambda
 
 ```sh
-aws lambda create-function --function-name bb8-url  --zip-file fileb://target/bb8-url-0.0.1-SNAPSHOT-aws --role arn:aws:iam::1111:role/fibonacci-java-dev-us-east-1-lambdaRole --handler me.rgalba.bb8url.ConfigStringHandler --description "BB8 Url function" --runtime java8 --region us-east-1 --timeout 30 --memory-size 1024 --publish
+$ sls deploy
+λ sls deploy
+Serverless: Packaging service...
+Serverless: Uploading CloudFormation file to S3...
+Serverless: Uploading artifacts...
+Serverless: Uploading service bb8-url-0.0.1-SNAPSHOT-aws.jar file to S3 (17.79 MB)...
+Serverless: Validating template...
+Serverless: Updating Stack...
+Serverless: Checking Stack update progress...
+.........
+Serverless: Stack update finished...
+Service Information
+service: bb8-url
+stage: dev
+region: us-east-1
+stack: bb8-url-dev
+resources: 6
+api keys:
+  None
+endpoints:
+  None
+functions:
+  main: bb8-url-dev-main
+layers:
+  None
+Serverless: Run the "serverless" command to setup monitoring, troubleshooting and testing.
 ```
+
+## Serverless framework
+
+[Doc][4]
 
 
 [1]: https://diego.assencio.com/?index=eacd6eedf46c9dd596a5f12221ad15b8
 [2]: https://www.baeldung.com/spring-cloud-function
 [3]: https://medium.com/faun/spring-cloud-function-deploy-first-serverless-function-using-spring-1bbdc0a4620d
+[4]: https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/
