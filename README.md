@@ -71,4 +71,21 @@ POST /api/shorten/
 }
 ```
 
+## Spring Cloud
+
+Build function:
+
+```
+mvn clean package
+```
+
+## AWS Lambda
+
+```sh
+aws lambda create-function --function-name bb8-url  --zip-file fileb://target/bb8-url-0.0.1-SNAPSHOT-aws --role arn:aws:iam::1111:role/fibonacci-java-dev-us-east-1-lambdaRole --handler me.rgalba.bb8url.ConfigStringHandler --description "BB8 Url function" --runtime java8 --region us-east-1 --timeout 30 --memory-size 1024 --publish
+```
+
+
 [1]: https://diego.assencio.com/?index=eacd6eedf46c9dd596a5f12221ad15b8
+[2]: https://www.baeldung.com/spring-cloud-function
+[3]: https://medium.com/faun/spring-cloud-function-deploy-first-serverless-function-using-spring-1bbdc0a4620d
