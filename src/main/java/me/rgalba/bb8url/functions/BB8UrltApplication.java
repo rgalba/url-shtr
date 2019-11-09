@@ -1,4 +1,4 @@
-package me.rgalba.URL.Shortener;
+package me.rgalba.bb8url.functions;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Bean;
 import java.util.function.Function;
 
 @SpringBootApplication
-public class UrlShrtApplication {
+public class BB8UrltApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UrlShrtApplication.class, args);
+		SpringApplication.run(BB8UrltApplication.class, args);
 	}
 
 	@Bean
