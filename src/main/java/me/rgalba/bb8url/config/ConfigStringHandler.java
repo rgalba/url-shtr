@@ -6,4 +6,4 @@ import org.springframework.cloud.function.adapter.aws.SpringBootRequestHandler;
  *  Its fully qualified name needs to be used on AWS Lambda configuration page
  */
 
-public class ConfigStringHandlers extends SpringBootRequestHandler<String, String> {}
+public class ConfigStringHandler extends SpringBootRequestHandler<String, String> {}

@@ -55,14 +55,14 @@ package:
 
 functions:
   main:
-    handler: me.rgalba.bb8url.config.ConfigStringHandlers
+    handler: me.rgalba.bb8url.config.ConfigStringHandler
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
     events:
       - http:
-          path: /
+          path: /reverse
           method: post
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
